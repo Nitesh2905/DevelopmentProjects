@@ -4,4 +4,4 @@
  
  If you want you can fork it or review it! 
  
- ## Make sure to star the repo!⭐
+ ## Make sure to give ⭐ the repo!
