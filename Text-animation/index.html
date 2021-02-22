@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TextAnimation</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Work Sans", sans-serif;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: rgb(38, 59, 59);
+      }
+      h1 {
+        font-size: 52px;
+        -webkit-text-stroke: 0.5px rgb(78, 247, 92.5, 0.5);
+        color: rgb(38, 59, 59);
+        text-transform: uppercase;
+        position: relative;
+      }
+      h1::before {
+        content: attr(data-text);
+        position: absolute;
+        color: rgb(78, 247, 92.5);
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        border-right: 3px solid chartreuse;
+        overflow: hidden;
+        animation: text 6s linear infinite;
+      }
+      @keyframes text {
+        0%,
+        20%,
+        100% {
+          width: 0;
+        }
+        75%,
+        90% {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 data-text="Welcome!">Welcome!</h1>
+  </body>
+</html>
