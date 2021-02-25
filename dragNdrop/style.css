@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#div1,
+#div2 {
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#div1 {
+  position: relative;
+  top: 250px;
+  left: 280px;
+}
+
+#div2 {
+  position: relative;
+  top: 221px;
+  left: 800px;
+}
